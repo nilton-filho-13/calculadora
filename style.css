@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+.calculator{
+    display: block;
+    margin: auto;
+    width: 316px;
+    background-color:rgba(199, 199, 199, 0.450) ;
+    box-shadow: 0 0 15px black;
+}
+
+
+/* tela */
+
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    height: 100px;
+    font-family: 'Francois One', sans-serif;;
+    font-size: 40px;
+    color: black;
+    padding: 30px 10px;
+    overflow: hidden;
+}
+
+
+/* botoes de navegacao */
+
+
+.navbar-calculator{
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap:2px;
+}
+
+.navbar-calculator button{
+    border: transparent;
+    font-size: 12px;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+/* botoes calculadora */
+
+
+
+.calculator-buttons{
+    display: grid;
+    text-align: center;
+    padding-top: 2px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap:2px;
+}
+
+.calculator-buttons button{
+    border-radius: 5px;
+    background-color:rgb(245, 237, 237);
+    padding: 20px;
+    font-size: 1.0rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.calculator-buttons button:hover{
+    background-color: rgba(209, 207, 207, 0.267);
+}
+
+
+/* historico  */
+
+
+
+#navbar #history-content{
+    display: none;
+}
+
+#navbar #history-content.active{    
+    display: flex;
+    position: absolute;
+    height: 200px;
+    width: 310px;
+    margin: 3px;
+    border-radius: 5px;
+    background-color: rgba(192, 187, 187, 0.993);
+    overflow: hidden;
+    justify-content: center;
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* botao historico */
+
+
+#btn-history {
+    font-size: 1.2rem;
+    margin-left: 125px;
+    padding-left: 10px;
+    border: none;
+    background-color:rgba(209, 207, 207, 0.267) ;
+}
+
+#btn-history:hover {
+    cursor: pointer;
+}
